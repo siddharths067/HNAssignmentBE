@@ -186,7 +186,7 @@ router.post(`/vote`, (req, res, next) => {
 });
 
 
-router.get(`/vote`, (req, res, next) => {
+router.post(`/vote/get`, (req, res, next) => {
     if (req.body['id'] === undefined) {
         res.status(400).send({
             status: `error`,

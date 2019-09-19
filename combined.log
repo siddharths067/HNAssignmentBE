@@ -1158,3 +1158,24 @@
 {"message":"Connection established to MySQL Server Correctly","level":"info","service":"HackerNews Backend"}
 {"message":"User Model Initialized","level":"info","service":"HackerNews Backend"}
 {"message":"Comment Model Initialized","level":"info","service":"HackerNews Backend"}
+{"message":"siddharth","level":"info","service":"HackerNews Backend"}
+{"message":"Successfully inserted Comment","level":"info","service":"HackerNews Backend"}
+{"message":"siddharth","level":"info","service":"HackerNews Backend"}
+{"message":"Successfully inserted Comment","level":"info","service":"HackerNews Backend"}
+{"message":"siddharth","level":"info","service":"HackerNews Backend"}
+{"message":"Successfully inserted Comment","level":"info","service":"HackerNews Backend"}
+{"message":"siddharth","level":"info","service":"HackerNews Backend"}
+{"message":"Successfully inserted Comment","level":"info","service":"HackerNews Backend"}
+{"message":"siddharth","level":"info","service":"HackerNews Backend"}
+{"message":"Successfully inserted Comment","level":"info","service":"HackerNews Backend"}
+{"message":"siddharth","level":"info","service":"HackerNews Backend"}
+{"message":"Successfully inserted Comment","level":"info","service":"HackerNews Backend"}
+{"message":"siddharth","level":"info","service":"HackerNews Backend"}
+{"message":"Successfully inserted Comment","level":"info","service":"HackerNews Backend"}
+{"message":"siddharth","level":"info","service":"HackerNews Backend"}
+{"message":"Successfully inserted Comment","level":"info","service":"HackerNews Backend"}
+{"message":"Added Console to Winston","level":"info","service":"HackerNews Backend"}
+{"message":"Started server at port 8000","level":"info","service":"HackerNews Backend"}
+{"message":"Connection established to MySQL Server Correctly","level":"info","service":"HackerNews Backend"}
+{"message":"User Model Initialized","level":"info","service":"HackerNews Backend"}
+{"message":"Comment Model Initialized","level":"info","service":"HackerNews Backend"}
