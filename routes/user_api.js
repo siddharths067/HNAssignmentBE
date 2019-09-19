@@ -28,6 +28,7 @@ router.post(`/login`, function (req, res, next) {
        if(users.length && users[0].getDataValue(`username`) === username && users[0].getDataValue(`password`) === password){
            let apiToken = generateSha(username + (new Date()).toString());
            generateApiToken(username, apiToken).then(status => {
+               console.log(`Login Token ${apiToken}`);
                res.cookie(`HNToken`, apiToken);
                res.status(200).send({
                    status: `success`,
