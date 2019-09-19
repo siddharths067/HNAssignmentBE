@@ -31,7 +31,8 @@ router.post(`/login`, function (req, res, next) {
                res.cookie(`HNToken`, apiToken);
                res.status(200).send({
                    status: `success`,
-                   message: status
+                   message: status,
+                   token: apiToken
                });
            }).catch(error => {
                logger.error(error);
