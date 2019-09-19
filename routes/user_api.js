@@ -5,6 +5,7 @@ const {generateSha, generateApiToken} = require(`../utils/auth_utils`);
 
 const logger = require(`../logger`);
 const User = require(`../database/models/User`);
+const redis = require("redis");
 
 
 router.post(`/login`, function (req, res, next) {
@@ -104,5 +105,10 @@ router.post(`/register`, function (req, res, next) {
     }
 });
 
+router.post(`/logout`, (req, res, next) => {
+    const client = redis.createClient();
+    client.del((req.cookies[`HNToken`] || req.body['HNToken']));
+    res.status(200).send("logout successful");
+});
 
 module.exports = router;
