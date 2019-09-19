@@ -1,0 +1,35 @@
+{"message":"Cannot connect to SQL Server","level":"error","service":"HackerNews Backend"}
+{"name":"SequelizeConnectionError","parent":{"code":"ER_NOT_SUPPORTED_AUTH_MODE","errno":1251,"sqlState":"08004","sqlMessage":"Client does not support authentication protocol requested by server; consider upgrading MySQL client"},"original":{"code":"ER_NOT_SUPPORTED_AUTH_MODE","errno":1251,"sqlState":"08004","sqlMessage":"Client does not support authentication protocol requested by server; consider upgrading MySQL client"},"level":"error","service":"HackerNews Backend"}
+{"message":"Error Occurred SequelizeConnectionError: Client does not support authentication protocol requested by server; consider upgrading MySQL client","level":"error","service":"HackerNews Backend"}
+{"command":"SET","args":["7e81cd0ad95a67709ddeff3d63dd1f4a360491ed",true,10000],"code":"ERR","level":"error","service":"HackerNews Backend"}
+{"level":"error","service":"HackerNews Backend"}
+{"level":"error","service":"HackerNews Backend"}
+{"level":"error","service":"HackerNews Backend"}
+{"level":"error","service":"HackerNews Backend"}
+{"level":"error","service":"HackerNews Backend"}
+{"level":"error","service":"HackerNews Backend"}
+{"level":"error","service":"HackerNews Backend"}
+{"level":"error","service":"HackerNews Backend"}
+{"level":"error","service":"HackerNews Backend"}
+{"name":"SequelizeDatabaseError","parent":{"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: '' for column 'replyto' at row 1","sql":"INSERT INTO `comments` (`id`,`text`,`username`,`replyto`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);","parameters":["lolwa","siddharth","","2019-09-18 13:09:55","2019-09-18 13:09:55"]},"original":{"code":"ER_TRUNCATED_WRONG_VALUE_FOR_FIELD","errno":1366,"sqlState":"HY000","sqlMessage":"Incorrect integer value: '' for column 'replyto' at row 1","sql":"INSERT INTO `comments` (`id`,`text`,`username`,`replyto`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);","parameters":["lolwa","siddharth","","2019-09-18 13:09:55","2019-09-18 13:09:55"]},"sql":"INSERT INTO `comments` (`id`,`text`,`username`,`replyto`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);","parameters":["lolwa","siddharth","","2019-09-18 13:09:55","2019-09-18 13:09:55"],"level":"error","service":"HackerNews Backend"}
+{"level":"error","service":"HackerNews Backend"}
+{"level":"error","service":"HackerNews Backend"}
+{"level":"error","service":"HackerNews Backend"}
+{"level":"error","service":"HackerNews Backend"}
+{"level":"error","service":"HackerNews Backend"}
+{"message":"Cannot connect to SQL Server","level":"error","service":"HackerNews Backend"}
+{"name":"SequelizeConnectionError","parent":{"code":"ER_BAD_DB_ERROR","errno":1049,"sqlState":"42000","sqlMessage":"Unknown database 'hndb'"},"original":{"code":"ER_BAD_DB_ERROR","errno":1049,"sqlState":"42000","sqlMessage":"Unknown database 'hndb'"},"level":"error","service":"HackerNews Backend"}
+{"message":"Error Occurred SequelizeConnectionError: Unknown database 'hndb'","level":"error","service":"HackerNews Backend"}
+{"message":"Error Occurred SequelizeConnectionError: Unknown database 'hndb'","level":"error","service":"HackerNews Backend"}
+{"message":"Cannot connect to SQL Server","level":"error","service":"HackerNews Backend"}
+{"name":"SequelizeConnectionError","parent":{"code":"ER_BAD_DB_ERROR","errno":1049,"sqlState":"42000","sqlMessage":"Unknown database 'hndb'"},"original":{"code":"ER_BAD_DB_ERROR","errno":1049,"sqlState":"42000","sqlMessage":"Unknown database 'hndb'"},"level":"error","service":"HackerNews Backend"}
+{"message":"Error Occurred SequelizeConnectionError: Unknown database 'hndb'","level":"error","service":"HackerNews Backend"}
+{"message":"Error Occurred SequelizeConnectionError: Unknown database 'hndb'","level":"error","service":"HackerNews Backend"}
+{"level":"error","service":"HackerNews Backend"}
+{"message":"Error Destroying Instances Error: WHERE parameter \"replyto\" has invalid \"undefined\" value","level":"error","service":"HackerNews Backend"}
+{"message":"Error Destroying Instances Error: WHERE parameter \"replyto\" has invalid \"undefined\" value","level":"error","service":"HackerNews Backend"}
+{"message":"Error Destroying Instances Error: WHERE parameter \"replyto\" has invalid \"undefined\" value","level":"error","service":"HackerNews Backend"}
+{"message":"Cannot connect to SQL Server","level":"error","service":"HackerNews Backend"}
+{"name":"SequelizeHostNotFoundError","parent":{"errno":"ENOTFOUND","code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"db","fatal":true},"original":{"errno":"ENOTFOUND","code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"db","fatal":true},"level":"error","service":"HackerNews Backend"}
+{"message":"Error Occurred SequelizeHostNotFoundError: getaddrinfo ENOTFOUND db","level":"error","service":"HackerNews Backend"}
+{"message":"Error Occurred SequelizeHostNotFoundError: getaddrinfo ENOTFOUND db","level":"error","service":"HackerNews Backend"}
