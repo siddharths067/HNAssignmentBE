@@ -9,7 +9,6 @@ const User = require(`../database/models/User`);
 
 router.post(`/login`, function (req, res, next) {
 
-    console.log(`Request Body ` + req.body[`username`] + " " + req.body["password"]);
     let username = req.body[`username`];
     let password = (req.body[`password`] === undefined) ? undefined : generateSha(req.body[`password`]);
     if (username === undefined || password === undefined) {

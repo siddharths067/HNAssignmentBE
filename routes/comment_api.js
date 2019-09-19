@@ -15,7 +15,7 @@ router.post(`/`, (req, res, next) => {
             message: `Comment Text not present`
         })
     } else {
-        isAuthenticated(req.cookies[`HNToken`]).then(isAuth => {
+        isAuthenticated((req.cookies[`HNToken`] || req.body['HNToken'])).then(isAuth => {
             logger.info(isAuth);
             if (isAuth) {
                 Comment.create({
@@ -53,8 +53,10 @@ router.post(`/`, (req, res, next) => {
     }
 });
 
-router.get(`/`, (req, res, next) => {
-    isAuthenticated(req.cookies[`HNToken`]).then(isAuth => {
+router.post(`/get`, (req, res, next) => {
+    console.log(req.body['replyto']);
+    console.log(req.body[`HNToken`]);
+    isAuthenticated((req.cookies[`HNToken`] || req.body['HNToken'])).then(isAuth => {
         if (isAuth)
             Comment.findAll({
                 where: {
@@ -97,7 +99,7 @@ router.delete(`/`, (req, res, next) => {
             code: `400`,
             message: `comment id not present`
         })
-    } else isAuthenticated(req.cookies[`HNToken`]).then(isAuth => {
+    } else isAuthenticated((req.cookies[`HNToken`] || req.body['HNToken'])).then(isAuth => {
         if (isAuth)
             Comment.destroy({
                 where: {
@@ -141,7 +143,7 @@ router.post(`/vote`, (req, res, next) => {
             code: `400`,
             message: `vote type or comment id not present`
         })
-    } else isAuthenticated(req.cookies[`HNToken`]).then(isAuth => {
+    } else isAuthenticated((req.cookies[`HNToken`] || req.body['HNToken'])).then(isAuth => {
         if (isAuth)
             Comment.findAll({
                 where: {
@@ -191,7 +193,7 @@ router.get(`/vote`, (req, res, next) => {
             code: `400`,
             message: `comment id not present`
         })
-    } else isAuthenticated(req.cookies[`HNToken`]).then(isAuth => {
+    } else isAuthenticated((req.cookies[`HNToken`] || req.body['HNToken'])).then(isAuth => {
         if (isAuth)
             Comment.findAll({
                 where: {

@@ -10,12 +10,14 @@ module.exports = {
         const client = redis.createClient();
         return client.set(value, username).then(status => {
             // 24 Hours expiration
-            return client.expire(value, 120)
+            return client.expire(value, 60*60*24)
         });
     },
     isAuthenticated: function(value){
+        console.log(value);
         const client = redis.createClient();
         return client.get(value).then(result => {
+            console.log(result);
             if(result === `null`)
                 return false;
             else return result;
