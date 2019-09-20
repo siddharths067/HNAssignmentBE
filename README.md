@@ -53,3 +53,10 @@ Create a DB on your MySql server and provide credentials in the file ```database
 * Sequelize
 * Express
 * Docker
+
+
+## Screenshot
+
+Screenshots are attached in the home directory for UI.
+
+Visit the Front end repo as mentioned in the mail
